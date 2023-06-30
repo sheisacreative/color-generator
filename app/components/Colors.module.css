@@ -1,0 +1,57 @@
+.titleContainer {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  font-family: var(--font-playfair);
+  font-weight: 400;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--neutral-60);
+  margin-top: 0.5rem;
+}
+
+.colorsContainer {
+  margin-top: 2.5rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 2fr 1fr 2fr;
+  margin-bottom: 5rem;
+}
+
+.shades,
+.tints {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.singleColor {
+  background-color: aliceblue;
+  color: var(--neutral-0);
+  border-radius: 1rem;
+  min-height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+  transition: all 1s;
+}
+
+.colorName {
+}
+
+.copyLink {
+  position: absolute;
+  bottom: 1.5rem;
+  color: var(--neutral-60);
+}
+.selectedColor {
+  background-color: antiquewhite;
+  border-radius: 1rem;
+  height: 100%;
+}

@@ -1,0 +1,17 @@
+.titleBackground {
+  background-color: var(--neutral-100);
+  padding: 7rem 0 0 0;
+  border-radius: 0 0 2.5rem 2.5rem;
+}
+
+.title {
+  color: var(--neutral-0);
+  font-family: var(--font-playfair);
+  font-weight: 400;
+}
+
+.bigText {
+  display: block;
+  line-height: 0.8;
+  margin-top: 1.5rem;
+}

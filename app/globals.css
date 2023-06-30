@@ -1,0 +1,25 @@
+@import "./styles/reset.css";
+
+:root {
+  --neutral-100: #000;
+  --neutral-90: #303030;
+  --neutral-60: #707070;
+  --neutral-0: #fff;
+}
+.container {
+  margin: 0 auto;
+  width: 1600px;
+  max-width: 95vw;
+}
+
+.font-sm {
+  font-size: 2rem;
+}
+
+.font-m {
+  font-size: 3rem;
+}
+
+.font-l {
+  font-size: 6rem;
+}

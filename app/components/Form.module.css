@@ -1,0 +1,68 @@
+.form {
+  margin: 5rem auto;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.formLabel {
+  font-family: var(--font-playfair);
+  margin-bottom: 0.75rem;
+}
+
+.colorInputWrapper {
+  background-color: #f2421b;
+  border-radius: 2.5rem;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+
+.colorInput {
+  opacity: 0;
+  display: block;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.textColorInput {
+  border: 2px solid var(--neutral-60);
+  height: 3rem;
+  padding: 0 1.5rem;
+  border-radius: 2.5rem;
+  max-width: 10rem;
+}
+
+.colorContainer {
+  position: relative;
+}
+
+.colorBtnContainer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.button {
+  background-color: var(--neutral-100);
+  color: var(--neutral-0);
+  border: none;
+  border-radius: 5rem;
+  height: 3rem;
+  padding: 0 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 400ms;
+}
+
+.formLabelHidden {
+  display: none;
+}
+
+.button:hover {
+  background-color: var(--neutral-90);
+}
