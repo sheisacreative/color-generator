@@ -1,4 +1,4 @@
-1. Create context.
+1. Create context. OK.
 2. Get form value.
 3. Submit form value.
 4. Install value.js.

@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter, Playfair_Display } from "next/font/google";
 import styles from "./layout.module.css";
+import { AppProvider } from "./context";
 
 export const playfair = Playfair_Display({
   weight: ["400"],
@@ -26,7 +27,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${playfair.variable} ${styles.appContainer}`}
       >
-        {children}
+        <AppProvider>{children}</AppProvider>
       </body>
     </html>
   );
