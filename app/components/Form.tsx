@@ -5,9 +5,9 @@ import { useGlobalContext } from "../context";
 
 const Form = () => {
   const [tempTextColor, setTempTextColor] = useState("");
+  const [tempSelectedColor, setTempSelectedColor] = useState("#f2421b");
 
-  const { selectedColor, setSelectedColor, setTintsAndShades } =
-    useGlobalContext();
+  const { setSelectedColor, setTintsAndShades } = useGlobalContext();
 
   // Prevent the user to type non-hex values
   // Set selected color
@@ -16,7 +16,7 @@ const Form = () => {
     setTempTextColor(`#${e.target.value.replace(hexRegex, "")}`);
 
     if (e.target.value.length > 6) {
-      setSelectedColor(e.target.value);
+      setTempSelectedColor(e.target.value);
       setTintsAndShades();
     }
   };
@@ -24,12 +24,13 @@ const Form = () => {
   // Set selected color
   // Set text input color
   const setColorPicker = (e: ChangeEvent<HTMLInputElement>) => {
-    setSelectedColor(e.target.value);
+    setTempSelectedColor(e.target.value);
     setTempTextColor(e.target.value);
   };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setSelectedColor(tempSelectedColor);
   };
 
   return (
@@ -58,7 +59,7 @@ const Form = () => {
 
           <div
             className={styles.colorInputWrapper}
-            style={{ backgroundColor: selectedColor }}
+            style={{ backgroundColor: tempSelectedColor }}
           >
             <input
               type="color"
