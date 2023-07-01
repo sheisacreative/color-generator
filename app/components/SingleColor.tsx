@@ -12,7 +12,7 @@ const SingleColor = ({ color }: Color) => {
       style={{ backgroundColor: `#${color}` }}
     >
       <div className={styles.colorHover}>
-        <p className={`font-sm ${styles.colorName}`}>{`#${color}`}</p>
+        <p className={`font-sm`}>{`#${color}`}</p>
         <p className={styles.copyLink}>Copy</p>
       </div>
     </div>

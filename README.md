@@ -3,6 +3,6 @@
 3. Submit form value. OK
 4. Install value.js. OK
 5. Generate colors. OK
-6. Implement hover.
+6. Implement hover. OK
 7. Implement copy to clipboard.
 8. Add success message (toastify).
