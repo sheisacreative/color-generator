@@ -1,6 +1,6 @@
 1. Create context. OK.
-2. Get form value.
-3. Submit form value.
+2. Get form value. OK
+3. Submit form value. OK
 4. Install value.js.
 5. Generate colors.
 6. Implement hover.

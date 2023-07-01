@@ -1,7 +1,10 @@
 import React from "react";
 import styles from "./Colors.module.css";
+import { useGlobalContext } from "../context";
 
 const Colors = () => {
+  const { selectedColor } = useGlobalContext();
+
   return (
     <div className="container">
       <div className={styles.titleContainer}>

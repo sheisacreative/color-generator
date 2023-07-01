@@ -1,12 +1,22 @@
 "use client";
-import React, { createContext, useContext } from "react";
+import React, { createContext, useContext, useState } from "react";
 
 const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
-  const cat = "meow";
+  const [selectedColor, setSelectedColor] = useState("#f2421b");
 
-  return <AppContext.Provider value={{ cat }}>{children}</AppContext.Provider>;
+  const setTintsAndShades = () => {
+    return "hey";
+  };
+
+  return (
+    <AppContext.Provider
+      value={{ selectedColor, setSelectedColor, setTintsAndShades }}
+    >
+      {children}
+    </AppContext.Provider>
+  );
 };
 
 export const useGlobalContext = () => useContext(AppContext);
