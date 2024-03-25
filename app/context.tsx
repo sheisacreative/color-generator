@@ -1,5 +1,6 @@
 "use client";
 import React, { createContext, useContext, useState, ReactNode } from "react";
+import { toast } from "react-toastify";
 
 type AppContextType = {
   selectedColor: string;
@@ -21,9 +22,19 @@ export const AppProvider = ({ children }: Props) => {
   const [selectedColor, setSelectedColor] = useState("#f2421b");
 
   const copyToClipboard = async ({ color }: Color) => {
-    if (color) {
-      console.log("Copied");
+    console.log("Hey");
+    if (navigator.clipboard) {
+      try {
+        await navigator.clipboard.writeText(color);
+        toast.success("Color copied! :)");
+      } catch (e) {
+        toast.error("Sorry! We couldn't copy");
+      }
+    } else {
+      toast.error("Clipboard access not available");
     }
+
+    navigator.clipboard;
   };
 
   return (

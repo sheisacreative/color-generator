@@ -1,8 +1,34 @@
-1. Create context. OK.
-2. Get form value. OK
-3. Submit form value. OK
-4. Install value.js. OK
-5. Generate colors. OK
-6. Implement hover. OK
-7. Implement copy to clipboard.
-8. Add success message (toastify).
+MAKE IT RESPONSIVE
+ADD ANIMATIONS WITH FRAMER MOTION
+
+# The one & only Color Generator
+
+A super simple color gerator.
+[Live website]()
+
+## Features:
+
+- Selected a color by typing
+- Selecteb a color by color picker
+- Submit a color
+- Generate tints and shades
+- Copy colors to clipboard
+- Completely Responsive
+- Subtle animations
+- Feedback toasts
+
+## Tools & Tecnology
+
+- Figma
+- VS Code
+- Next.js
+- Typescript
+
+## Libraries
+
+- [Values.js](https://noeldelgado.github.io/values.js/)
+- [React Toastify](https://fkhadra.github.io/react-toastify/introduction)
+
+## About
+
+This project was inspired by the Color Generator presented by John Smilga on the [React 18 Tutorial and Projects Course (2023)](https://www.udemy.com/course/react-tutorial-and-projects-course/). Created for studying purposes.

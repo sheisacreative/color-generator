@@ -2,6 +2,7 @@ import "./globals.css";
 import { Inter, Playfair_Display } from "next/font/google";
 import styles from "./layout.module.css";
 import { AppProvider } from "./context";
+import "react-toastify/dist/ReactToastify.css";
 
 export const playfair = Playfair_Display({
   weight: ["400"],
