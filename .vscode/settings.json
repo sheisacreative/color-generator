@@ -5,7 +5,7 @@
     ".gitignore": true,
     "next**": true,
     ".eslint**": true,
-    "package**": true,
+    // "package**": true,
     "tsconfig**": true,
     "favicon.ico": true
   }

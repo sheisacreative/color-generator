@@ -8,8 +8,8 @@ A super simple color gerator.
 
 ## Features:
 
-- Selected a color by typing
-- Selecteb a color by color picker
+- Select a color by typing
+- Select a color by color picker
 - Submit a color
 - Generate tints and shades
 - Copy colors to clipboard
