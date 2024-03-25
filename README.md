@@ -4,7 +4,7 @@ ADD ANIMATIONS WITH FRAMER MOTION
 # The one & only Color Generator
 
 A super simple color gerator.
-[Live website]()
+[Live website](https://mai-colorgenerator.netlify.app/)
 
 ## Features:
 
